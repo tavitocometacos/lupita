@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glow Essence - Maquillaje </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Wishlist lateral -->
+  <div id="wishlist-panel" class="wishlist-panel">
+    <h3>Tu lista de deseos</h3>
+    <button class="cerrar-wishlist" onclick="cerrarWishlist()">✖</button>
+    <ul id="lista-deseos"></ul>
+  </div>
+
+
+  <header>
+    <div class="top-header">
+      <div class="logo-titulo">
+
+        <h1>Glow Essence</h1>
+      </div>
+      <div class="acciones-usuario">
+        <button onclick="abrirWishlist()" class="icon-btn" title="WishList">
+          🤍
+        </button>
+        <button onclick="iniciarSesion()" class="icon-btn" title="Iniciar sesión">
+          ☰
+        </button>
+      </div>
+    </div>
+    <p>Tu brillo, tu esencia.</p>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Favoritos.html">Favoritos</a></li>
+        <li><a href="Accesorios.html">Accesorios</a></li>
+        <li><a href="Maquillaje.html">Maquillaje</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="destacados">
+      <h2>Productos Destacados</h2>
+      <div class="productos">
+        <div class="producto">
+          <img src="https://via.placeholder.com/150" alt="Labial Rosa" />
+          <h3>Labial Rosa</h3>
+          <p>$12.99</p>
+          <button onclick="agregarADeseos('Labial Rosa')">♡</button>
+        </div>
+        <div class="producto">
+          <img src="https://via.placeholder.com/150" alt="Set de Brochas" />
+          <h3>Set de Brochas</h3>
+          <p>$24.99</p>
+          <button onclick="agregarADeseos('Set de Brochas')">♡</button>
+        </div>
+      </div>
+      <button onclick="verMas()">Ver más productos</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Glow Essence. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

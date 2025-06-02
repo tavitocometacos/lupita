@@ -1,0 +1,382 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body y fondo */
+body {
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+/* Header */
+header {
+  background-color: #ffe0ec;
+  padding: 15px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  border-bottom: 2px solid #ff6fa2;
+}
+
+.header-logo-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.header-logo-texto img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 8px;
+  object-fit: contain;
+}
+
+.header-logo-texto h1 {
+  color: #d63384;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.header-logo-texto p {
+  color: #b03166;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+/* Iconos del header */
+.header-icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.wishlist-btn {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #d63384;
+  transition: color 0.3s ease;
+}
+
+.wishlist-btn:hover {
+  color: #ff6fa2;
+}
+
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  background-color: #25d366;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe5b;
+}
+
+/* Navegación */
+nav {
+  width: 100%;
+  margin-top: 0px;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  justify-content: center;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #d63384;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+  color: #ff6fa2;
+}
+
+/* Carousel */
+.carousel {
+  margin: 30px 0;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff0f6;
+  border-radius: 15px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  min-width: 100%;
+  flex-shrink: 0;
+  color: #d63384;
+}
+
+.carousel-item h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.carousel-item p {
+  font-size: 1.2rem;
+}
+
+/* Indicadores (puntos) */
+.carousel-indicators {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.carousel-indicators .dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 6px;
+  background-color: #c6c6c6;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-indicators .dot.active {
+  background-color: #6b6b6b;
+}
+
+/* Sección servicios */
+.servicios {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.titulo-seccion {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #d63384;
+}
+/* Sección servicios */
+.servicios {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.titulo-seccion {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #d63384;
+}
+
+/* Contenedor de los servicios en una sola fila */
+.contenedor-servicios {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+
+/* Sección Servicios */
+.servicios {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.titulo-seccion {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #d63384;
+}
+
+.contenedor-servicios {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.servicio {
+  width: 280px;
+  padding: 25px 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+  background-color: #ffe0ec; /* color por defecto, se sobrescribe abajo */
+  flex-shrink: 0;
+}
+
+.servicio:hover {
+  transform: translateY(-5px);
+}
+
+.servicio1 {
+  background-color: #ffe0ec;
+}
+.servicio2 {
+  background-color: #a2ffa6 ;
+}
+.servicio3 {
+  background-color: #e8c5ff ; 
+}
+
+.icono-servicio {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+  object-fit: contain;
+}
+
+.titulo-seccion {
+  font-size: 2.2rem;      /* Tamaño de letra */
+  color: #d63384;         /* Color de texto */
+  font-weight: 700;       /* Grosor (negrita) */
+  font-family: 'Arial', sans-serif; /* Fuente */
+  margin-bottom: 40px;    /* Separación debajo */
+  text-transform: uppercase; /* Opcional: poner todo en mayúsculas */
+  letter-spacing: 2px;    /* Espaciado entre letras */
+}
+
+.descripcion-servicio p {
+  font-size: 1rem;
+  color: #444;
+}
+
+
+/* Icono opcional */
+.icono-servicio {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+  object-fit: contain;
+}
+
+/* Títulos y descripciones */
+.titulo-servicio {
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.descripcion-servicio p {
+  font-size: 1rem;
+  color: #444;
+}
+
+.icono-servicio {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+  object-fit: contain;
+}
+
+.titulo-servicio {
+  font-size: 1.4rem;
+  color: #d63384;
+  margin-bottom: 10px;
+}
+
+.descripcion-servicio p {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Footer */
+.footer {
+  background-color: #ffe0ec;
+  padding: 40px 20px 20px;
+  color: #333;
+  font-size: 1rem;
+  margin-top: 60px;
+}
+
+.footer-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.footer-info h3 {
+  color: #d63384;
+  margin-bottom: 10px;
+}
+
+.footer-redes h4 {
+  margin-bottom: 10px;
+  color: #d63384;
+}
+
+.footer-redes a {
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-redes a:hover {
+  color: #d63384;
+}
+
+.footer-copy {
+  text-align: center;
+  border-top: 1px solid #f4c4d6;
+  padding-top: 15px;
+  font-size: 0.9rem;
+  color: #777;
+}
+.wishlist-panel {
+  position: fixed;
+  top: 0;
+  right: -320px; /* fuera de pantalla */
+  width: 320px;
+  height: 100vh;
+  background-color: #ffe0ec;
+  box-shadow: -2px 0 8px rgba(0,0,0,0.2);
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.wishlist-panel.active {
+  right: 0; /* se muestra */
+}
+
+.close-wishlist {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #d63384;
+  cursor: pointer;
+  float: right;
+}
